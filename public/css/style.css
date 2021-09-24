@@ -7,7 +7,7 @@
 }
 
 main {
-  margin-top: 3.76rem;
+  margin-top: 3.94rem;
 }
 
 .ombre {
@@ -22,13 +22,13 @@ h1 {
   font-family: "shrikhand", cursive;
   text-align: center;
   font-weight: 500;
-  font-size: 1.9rem;
+  font-size: 1.81rem;
 }
 
 h2 {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.45rem;
 }
 
@@ -36,12 +36,12 @@ h3 {
   font-family: "Roboto", sans-serif;
   text-align: center;
   font-size: 1.1rem;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .head-nav {
   width: 100%;
-  height: 3.75rem;
+  height: 3.94rem;
   background-color: #FFFFFF;
   display: grid;
   grid-template-columns: 1fr 11.25rem 1fr;
@@ -59,8 +59,17 @@ h3 {
   font-size: 1.2rem;
 }
 
+footer {
+  background-color: #363636;
+  color: #FFFFFF;
+}
+footer a {
+  color: #FFFFFF;
+}
+
 .galerie {
   margin: 0 auto;
+  margin-top: 1.19rem;
   width: 21rem;
 }
 
@@ -75,18 +84,22 @@ h3 {
   height: 69%;
   border-radius: 0.83rem 0.83rem 0 0;
   object-fit: cover;
+  object-position: 50% 100%;
 }
 .card__info {
+  height: 29%;
   border-radius: 0 0 0.83rem 0.83rem;
   display: flex;
   flex-flow: column wrap;
 }
 
 .btnRestau {
+  width: 13.69;
+  height: 3.25rem;
   font-size: 1rem;
   font-weight: 500;
   padding: 0.85rem 1.45rem;
-  margin: 0.94rem auto;
+  margin: 1.94rem auto;
   border: none;
   border-radius: 1.67rem;
   color: #FFFFFF;
@@ -144,7 +157,7 @@ h3 {
 .btnGps {
   color: #363636;
   width: 100%;
-  height: 2.94rem;
+  height: 3.13rem;
   border: none;
   font-size: 1rem;
   font-weight: 400;
@@ -155,20 +168,20 @@ h3 {
 }
 
 .presentation {
+  height: 21.06rem;
   background-color: #F5F5F5;
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
   align-items: center;
 }
 
 h2 {
-  margin-top: 2rem;
+  margin-top: 2.32rem;
   width: 70%;
 }
 
 h3 {
-  margin-top: 0.94rem;
+  margin-top: 0.9rem;
 }
 
 h4 {
@@ -179,7 +192,7 @@ h4 {
 nav {
   height: 20rem;
   margin-top: 3rem;
-  margin-bottom: 4rem;
+  margin-bottom: 4.19rem;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -192,14 +205,11 @@ nav h4 {
 
 .selection {
   background-color: #F5F5F5;
+  display: flex;
+  flex-flow: column wrap;
 }
-
-footer {
-  background-color: #363636;
-  color: #FFFFFF;
-}
-footer a {
-  color: #FFFFFF;
+.selection h4 {
+  margin-top: 3.56rem;
 }
 
 /*# sourceMappingURL=style.css.map */

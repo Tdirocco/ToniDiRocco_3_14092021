@@ -2,6 +2,7 @@
 
 .galerie{
     margin: 0 auto;
+    margin-top: 1.19rem;
     width: 21rem;
 }
 
@@ -15,8 +16,10 @@
         height: 69%;
         border-radius: 0.83rem 0.83rem 0 0;
         object-fit: cover;
+        object-position: 50% 100%;
     }
     &__info{
+        height: 29%;
         border-radius: 0 0 0.83rem 0.83rem;
         display: flex;
         flex-flow: column wrap;
