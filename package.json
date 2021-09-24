@@ -1,0 +1,17 @@
+{
+  "name": "tonidirocco_3_14092021",
+  "version": "1.0.0",
+  "description": "ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tdirocco/ToniDiRocco_3_14092021"
+  },
+  "author": "Toni DI ROCCO",
+  "license": "ISC",
+  "browserlist": "last 4 versions"
+}

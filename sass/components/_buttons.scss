@@ -1,0 +1,64 @@
+
+
+
+.btnRestau{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.85rem 1.45rem;
+    margin: 0.94rem auto;
+    border: none;
+    border-radius: 1.67rem;
+    color: $white;
+    @include background-gradient;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.btn2{
+    width: 20.125rem;
+    height: 4.625rem;
+    border-radius: 1.5rem;
+    background-color: $grey-light;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    &:hover{
+        cursor: pointer;
+        i{
+        color: $primary;
+        }
+    }
+    & .index{
+        font-size: 0.90rem;
+        width: 1.5625rem;
+        height: 1.5625rem;
+        border-radius: 0.78rem;
+        background-color: $primary;
+        color: $white;
+        position: relative;
+        left: -0.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    & i{
+        color: $footer-color;
+        font-size: 1.25rem;
+        margin-left: 0.94rem;
+        margin-right: 1.5rem;
+       
+    } 
+}
+
+
+.fa-heart{
+    font-size: 1.94rem;
+    background-clip: text;
+    background: -webkit-gradient(linear, left bottom, right top, from($secondary), to($primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+

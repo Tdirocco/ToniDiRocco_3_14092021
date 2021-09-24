@@ -1,0 +1,23 @@
+$primary: #9356DC;
+$secondary: #FF79DA;
+$tertiary: #99E2D0;
+$white: #FFFFFF;
+$grey: #EBEBEB;
+$grey-light: #F5F5F5;
+$footer-color: #363636;
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+main{
+    margin-top: 3.76rem;
+}
+
+.ombre{
+    box-shadow: 0 0.25rem 0.75rem #CCCCCC;
+}
