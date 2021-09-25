@@ -1,7 +1,42 @@
 footer{
     background-color: $footer-color;
     color: $white;
+    height: 12.31rem;
     & a{
         color: $white;
     }
+    & .liens{
+        width: 19.74rem;
+        margin: 0 auto;
+        padding-top: 1.5rem;
+        & h1{
+            text-align: left;
+            font-size: 1.13rem;
+        }
+    }
+    & nav{
+        width: 19.74rem;
+        height: 6.33rem;
+        margin: 1rem auto;
+        align-items: flex-start;
+        & li{
+            margin-bottom: 0.4rem;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+
+        & i{
+            font-size: 0.7rem;
+            margin-right: 0.5rem;
+        }
+    }
+    
+}
+
+.liens-icons{
+    width: 20.63rem;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    align-items: center;
 }

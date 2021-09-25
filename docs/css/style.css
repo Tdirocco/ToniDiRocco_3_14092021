@@ -66,15 +66,51 @@ h3 {
 footer {
   background-color: #363636;
   color: #FFFFFF;
+  height: 12.31rem;
 }
 footer a {
   color: #FFFFFF;
+}
+footer .liens {
+  width: 19.74rem;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+}
+footer .liens h1 {
+  text-align: left;
+  font-size: 1.13rem;
+}
+footer nav {
+  width: 19.74rem;
+  height: 6.33rem;
+  margin: 1rem auto;
+  align-items: flex-start;
+}
+footer nav li {
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+footer nav i {
+  font-size: 0.7rem;
+  margin-right: 0.5rem;
+}
+
+.liens-icons {
+  width: 20.63rem;
+  display: grid;
+  grid-template-columns: 7% 93%;
+  align-items: center;
 }
 
 .galerie {
   margin: 0 auto;
   margin-top: 1.19rem;
   width: 21rem;
+  height: 66.19rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
 }
 
 .card {
@@ -98,11 +134,14 @@ footer a {
 }
 
 .btnRestau {
-  width: 13.69;
+  width: 13.65rem;
   height: 3.25rem;
   font-size: 1rem;
   font-weight: 500;
-  padding: 0.85rem 1.45rem;
+  padding: 0 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 1.94rem auto;
   border: none;
   border-radius: 1.67rem;
@@ -216,6 +255,7 @@ nav h4 {
 
 #restau {
   background-color: #F5F5F5;
+  height: 76.94rem;
 }
 
 .selection {
