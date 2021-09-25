@@ -27,8 +27,15 @@
     align-items: center;
     font-size: 1rem;
     font-weight: 500;
+    color: black;
+    & .description{
+        width: 18.125rem;
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
     &:hover{
         cursor: pointer;
+        background-color: #F4EEFB;
         i{
         color: $primary;
         }
@@ -41,17 +48,16 @@
         background-color: $primary;
         color: $white;
         position: relative;
+        z-index: 1;
         left: -0.75rem;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     & i{
-        color: $footer-color;
+        color: #7D7D7D;
         font-size: 1.25rem;
         margin-left: 0.94rem;
-        margin-right: 1.5rem;
-       
     } 
 }
 

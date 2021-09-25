@@ -18,9 +18,6 @@
     <body>
         <header>
             <div class="head-nav ombre">
-                    <!-- <a href="index.html">
-                        <i class="fas fa-arrow-left"></i>
-                    </a> -->
                 <div class="vide"></div>
                 <h1>ohmyfood</h1>
             </div>        
@@ -31,71 +28,82 @@
                     <button class="btnGps" name="btnGps" type="submit"><i class="fas fa-map-marker-alt"></i>Paris, Belleville</button>
                     <h2>Réservez le menu qui vous convient</h2>
                     <h3>Découvrez des restaurants d'exception, séléctionnés par nos soins.</h3 >
-                    <button href="#restau" class="btnRestau ombre" name="btnRestau" type="submit">Explorer nos restaurants</button>
+                    <a href="#restau" class="btnRestau ombre" name="btnRestau" type="submit">Explorer nos restaurants</a>
             </section>
             <nav>
                     <h4>Fonctionnement</h4>
-                    <button class="btn2 ombre" name="btnChoixRestau" type="submit">
+                    <a href="#" class="btn2 ombre">
                         <div class="index">1</div>
-                        <i class="fas fa-mobile-alt"></i>
-                        Choisissez un restaurant
-                    </button>
-                    <button class="btn2 ombre" name="btnChoixRestau" type="submit">
+                        <div class="description">      
+                            <i class="fas fa-mobile-alt"></i>
+                            <p>Choisissez un restaurant</p>
+                        </div>
+                    </a>
+                    <a href="#" class="btn2 ombre">
                         <div class="index">2</div>
-                        <i class="fas fa-list-ul"></i>
-                        Composez votre menu
-                    </button>
-                    <button class="btn2 ombre" name="btnChoixRestau" type="submit">
-                       <div class="index">3</div>
-                        <i class="fas fa-store"></i>
-                        Dégustez au restaurant
+                        <div class="description">
+                            <i class="fas fa-list-ul"></i>
+                            <p>Composez votre menu</p>
+                        </div>
+                    </a>
+                    <a href="#" class="btn2 ombre">
+                        <div class="index">3</div>
+                        <div class="description">
+                            <i class="fas fa-store"></i>
+                            <p>Dégustez au restaurant</p>
+                        </div>
                  </button>
                 </nav>
             
 
-            <section class="selection">
-                <h4 id="restau">Restaurants</h4>
-                <div class="galerie">
-                        <a href="./pages/palette_du_gout.html">
-                            <div class="card ombre">
-                                <img class="card__img" src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"/>
-                                <div class="card__info">
-                                    <h4>La palette du goût</h4>
-                                    <p>Ménilmontant</p>
-                                    <i class="fas fa-heart"></i>
+            <section id="restau">
+                <div class="selection">
+                    <h4>Restaurants</h4>
+                    <div class="galerie">
+                                <div class="card ombre">
+                                    <a href="./pages/palette_du_gout.html">
+                                        <img class="card__img" src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"/>
+                                    </a>
+                                    <div class="card__info">
+                                        <a href="./pages/palette_du_gout.html">
+                                            <h4>La palette du goût</h4>
+                                            <p>Ménilmontant</p>
+                                        </a>
+                                        <i class="fas fa-heart"></i>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="./pages/note_enchantee.html">
-                            <div class="card ombre">
-                                <img class="card__img" src="./img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée"/>
-                                <div class="card__info">
-                                    <h4>La note enchantée</h4>
-                                    <p>Charonne</p>
-                                    <i class="fas fa-heart"></i>
+                            </a>
+                            <a href="./pages/note_enchantee.html">
+                                <div class="card ombre">
+                                    <img class="card__img" src="./img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée"/>
+                                    <div class="card__info">
+                                        <h4>La note enchantée</h4>
+                                        <p>Charonne</p>
+                                        <i class="fas fa-heart"></i>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="./pages/la_francaise.html">
-                            <div class="card ombre">
-                                <img class="card__img" src="./img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française"/>
-                                <div class="card__info">
-                                    <h4>À la française</h4>
-                                    <p>Cité Rouge</p>
-                                    <i class="fas fa-heart"></i>
+                            </a>
+                            <a href="./pages/la_francaise.html">
+                                <div class="card ombre">
+                                    <img class="card__img" src="./img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française"/>
+                                    <div class="card__info">
+                                        <h4>À la française</h4>
+                                        <p>Cité Rouge</p>
+                                        <i class="fas fa-heart"></i>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="./pages/delice_des_sens.html">
-                            <div class="card ombre">
-                                <img class="card__img" src="./img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens"/>
-                                <div class="card__info">
-                                    <h4>Le délice des sens</h4>
-                                    <p>Folie-Méricourt</p>
-                                    <i class="fas fa-heart"></i>
+                            </a>
+                            <a href="./pages/delice_des_sens.html">
+                                <div class="card ombre">
+                                    <img class="card__img" src="./img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens"/>
+                                    <div class="card__info">
+                                        <h4>Le délice des sens</h4>
+                                        <p>Folie-Méricourt</p>
+                                        <i class="fas fa-heart"></i>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                    </div>
                 </div>
             </section>
         </main>

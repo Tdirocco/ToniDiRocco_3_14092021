@@ -18,6 +18,10 @@ main {
   font-family: "Roboto", sans-serif;
 }
 
+title {
+  font-family: "shrikhand";
+}
+
 h1 {
   font-family: "shrikhand", cursive;
   text-align: center;
@@ -26,7 +30,6 @@ h1 {
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
   text-align: center;
   font-weight: 500;
   font-size: 1.45rem;
@@ -48,6 +51,7 @@ h3 {
   align-items: center;
   position: fixed;
   top: 0;
+  z-index: 10;
 }
 .head-nav a {
   width: 14px;
@@ -119,9 +123,16 @@ footer a {
   align-items: center;
   font-size: 1rem;
   font-weight: 500;
+  color: black;
+}
+.btn2 .description {
+  width: 18.125rem;
+  display: grid;
+  grid-template-columns: 20% 80%;
 }
 .btn2:hover {
   cursor: pointer;
+  background-color: #F4EEFB;
 }
 .btn2:hover i {
   color: #9356DC;
@@ -134,16 +145,16 @@ footer a {
   background-color: #9356DC;
   color: #FFFFFF;
   position: relative;
+  z-index: 1;
   left: -0.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .btn2 i {
-  color: #363636;
+  color: #7D7D7D;
   font-size: 1.25rem;
   margin-left: 0.94rem;
-  margin-right: 1.5rem;
 }
 
 .fa-heart {
@@ -203,13 +214,22 @@ nav h4 {
   margin: 0 auto;
 }
 
-.selection {
+#restau {
   background-color: #F5F5F5;
+}
+
+.selection {
+  width: 21rem;
+  margin: 0 auto;
   display: flex;
   flex-flow: column wrap;
+  justify-content: space-between;
 }
-.selection h4 {
-  margin-top: 3.56rem;
+
+#restau:before {
+  display: block;
+  content: "";
+  height: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */

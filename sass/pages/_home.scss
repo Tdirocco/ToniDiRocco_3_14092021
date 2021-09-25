@@ -49,11 +49,29 @@ nav{
     }
 }
 
-.selection{
+#restau{
     background-color: $grey-light;
+}
+
+.selection{
+    width: 21rem;
+    margin: 0 auto;
     display: flex;
     flex-flow: column wrap;
-    & h4{
-        margin-top: 3.56rem;
-    }
+    justify-content: space-between;
 }
+
+
+
+#restau:before{
+    display: block;
+    content: "";
+    height: 4rem;
+}  
+
+
+
+
+
+
+
