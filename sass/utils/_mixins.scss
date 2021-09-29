@@ -1,3 +1,21 @@
 @mixin background-gradient($direction:to bottom right){
     background: linear-gradient($direction, $secondary, $primary);
   }
+
+
+
+@mixin card-img{
+  width: 100%;
+  height: 69%;
+  border-radius: 0.83rem 0.83rem 0 0;
+  object-fit: cover;
+  object-position: 50% 100%;
+}
+
+@mixin card-info{
+  height: 20%;
+  border-radius: 0 0 0.83rem 0.83rem;
+  display: grid;
+  grid-template-columns: 79% 21%;
+  align-content: center;
+}

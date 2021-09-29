@@ -17,6 +17,7 @@
     @include background-gradient;
     &:hover{
         cursor: pointer;
+        box-shadow: 0 0.3rem 0.5rem lighten($footer-color, 45);
     }
 }
 
@@ -38,7 +39,8 @@
     }
     &:hover{
         cursor: pointer;
-        background-color: #F4EEFB;
+        background-color: lighten($primary, 35);
+        box-shadow: 0 0.3rem 0.5rem lighten($footer-color, 45);
         i{
         color: $primary;
         }
