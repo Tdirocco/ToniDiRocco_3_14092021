@@ -97,21 +97,21 @@
     }
     & .far{
         z-index: 0;
-        font-size: 1.90rem;
+        font-size: 1.5rem;
         opacity: 1;
     }
     & .fas{
-        font-size: 1.96rem;
+        font-size: 1.6rem;
         z-index: 1;
         opacity: 0;
         background-clip: text;
         background: -webkit-gradient(linear, left bottom, right top, from($secondary), to($primary));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: heartOut 800ms forwards;
-        &:hover{
+        animation: heartOut 200ms forwards;
+        &:active{
             cursor: pointer;
-            animation: heartIn 500ms forwards;
+            animation: heartIn 400ms forwards;
         }  
     }
 }

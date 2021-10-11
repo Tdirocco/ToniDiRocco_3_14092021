@@ -1,15 +1,18 @@
 
 
 .btnGps{
-    font-family: FontAwesome;
+    font-family: fontawesome, 'Roboto';
     text-align: center;
-    color: $footer-color;
+    color: Black;
     width: 100%;
     height: 3.13rem;
     border: none;
     font-size: 1rem;
     font-weight: 400;
     background-color: $grey;
+    &::placeholder{
+        color: black;
+    }
     &:hover{
         cursor: text;
     }
@@ -21,6 +24,9 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    @include tablette{
+        height: 18rem;
+    }
 }
 
 h2{
@@ -48,6 +54,9 @@ nav{
     & h4{
         width: 21rem;
         margin: 0 auto;
+        @include desktop{
+            text-align: center;
+        }
     }
 }
 
@@ -60,7 +69,7 @@ nav{
     width: 21rem;
     margin: 0 auto;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     justify-content: space-between;
 }
 

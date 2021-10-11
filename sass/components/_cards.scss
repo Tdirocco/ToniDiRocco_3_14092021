@@ -4,7 +4,7 @@
     margin: 0 auto;
     margin-top: 1.19rem;
     width: 21rem;
-    height: 66.19rem;
+    height: 66.25rem;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
@@ -12,9 +12,10 @@
 
 .card{
     width: 100%;
-    height: 15.75rem;
+    height: 15.81rem;
     background-color: $white;
     border-radius: 0.83rem;
+    position: relative;
     &:hover{
         box-shadow: 0 0.3rem 0.5rem lighten($footer-color, 45);
     }
@@ -23,7 +24,29 @@
         &-recenter{
             @include card-img;
             object-position: 50% 60%;
+            z-index: 1;
         }
+    }
+    &__badge{
+      opacity: 0;
+      position: absolute;
+      &--on{
+        opacity: 1;
+        width: 5.06rem;
+        height: 1.88rem;
+        border-radius: 0.15rem;
+        background-color: $tertiary;
+        color: darken($tertiary, 40%);
+        font-size: 0.9rem;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 5;
+      }
     }
     &__info{
         @include card-info;
@@ -58,7 +81,7 @@
     margin: 0 auto 1.3rem auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;    
+    //justify-content: space-between;    
 }
 
 
@@ -142,24 +165,24 @@
     width: 100%;
     height: 4.3rem;
     border-radius: 1rem;
-    //margin: 0 auto;
+    margin-bottom: 0.8rem;
     border-radius: 15px;
     display: flex;
     align-items: center;
     overflow: hidden;
-    animation: itemFadeIn 2000ms 800ms backwards;
+    animation: itemFadeIn 780ms 900ms backwards;
     @for $i from 1 through 10{
       &--#{$i} {
-        animation-delay: 250ms * $i;
+        animation-delay: 170ms * $i;
       }
     }
     &:hover{
       cursor: pointer;
       & .item__check{
         transform-origin: right;
-        animation: slideIn 1s forwards;
+        animation: slideIn 527ms forwards;
         & .fa-check-circle{
-          animation: rotate 950ms 50ms backwards;
+          animation: rotate 310ms 220ms backwards;
         }
       }
       & .ombre{
@@ -208,7 +231,7 @@
       overflow: hidden;
       display: flex;
       background-color: $tertiary;
-      animation: slideOut 1s backwards;
+      animation: slideOut 360ms backwards;
       & .fa-check-circle{
         padding: 5px;
         margin: auto;
