@@ -24,9 +24,6 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    @include tablette{
-        height: 18rem;
-    }
 }
 
 h2{
@@ -54,9 +51,6 @@ nav{
     & h4{
         width: 21rem;
         margin: 0 auto;
-        @include desktop{
-            text-align: center;
-        }
     }
 }
 

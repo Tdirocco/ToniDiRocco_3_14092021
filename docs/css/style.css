@@ -202,11 +202,6 @@ footer .liens {
   margin: 0 auto;
   padding-top: 1.5rem;
 }
-@media screen and (min-width: 541px) {
-  footer .liens {
-    margin-left: 3.75rem;
-  }
-}
 footer .liens h1 {
   text-align: left;
   font-size: 1.13rem;
@@ -241,7 +236,7 @@ footer nav i {
   margin: 0 auto;
   margin-top: 1.19rem;
   width: 21rem;
-  height: 66.25rem;
+  height: 66.19rem;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
@@ -249,13 +244,35 @@ footer nav i {
 
 .card {
   width: 100%;
-  height: 15.81rem;
+  height: 15.75rem;
   background-color: #FFFFFF;
   border-radius: 0.83rem;
   position: relative;
+  z-index: 1;
 }
 .card:hover {
   box-shadow: 0 0.3rem 0.5rem darkgray;
+}
+.card__badge {
+  color: #278870;
+  background-color: #99E2D0;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.2rem;
+  position: absolute;
+  z-index: 5;
+  top: 1rem;
+  right: 1rem;
+  visibility: hidden;
+}
+.card__badge--on {
+  color: #278870;
+  background-color: #99E2D0;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.2rem;
+  position: absolute;
+  z-index: 5;
+  top: 1rem;
+  right: 1rem;
 }
 .card__img {
   width: 100%;
@@ -263,6 +280,9 @@ footer nav i {
   border-radius: 0.83rem 0.83rem 0 0;
   object-fit: cover;
   object-position: 50% 100%;
+  position: relative;
+  z-index: 2;
+  top: 0;
 }
 .card__img-recenter {
   width: 100%;
@@ -271,32 +291,10 @@ footer nav i {
   object-fit: cover;
   object-position: 50% 100%;
   object-position: 50% 60%;
-  z-index: 1;
-}
-.card__badge {
-  opacity: 0;
-  position: absolute;
-}
-.card__badge--on {
-  opacity: 1;
-  width: 5.06rem;
-  height: 1.88rem;
-  border-radius: 0.15rem;
-  background-color: #99E2D0;
-  color: #278870;
-  font-size: 0.9rem;
-  font-weight: 400;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  z-index: 5;
 }
 .card__info {
   height: 20%;
-  padding-top: 1rem;
+  padding-top: 0.8rem;
   border-radius: 0 0 0.83rem 0.83rem;
   display: grid;
   grid-template-columns: 79% 21%;
@@ -330,6 +328,7 @@ footer nav i {
   margin: 0 auto 1.3rem auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-plat {
@@ -408,7 +407,6 @@ footer nav i {
   width: 100%;
   height: 4.3rem;
   border-radius: 1rem;
-  margin-bottom: 0.8rem;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -453,7 +451,7 @@ footer nav i {
   animation: slideIn 527ms forwards;
 }
 .item:hover .item__check .fa-check-circle {
-  animation: rotate 310ms 220ms backwards;
+  animation: rotate 310ms 120ms backwards;
 }
 .item:hover .ombre {
   box-shadow: 0rem 0.25rem 0.7rem #EBEBEB;
@@ -644,11 +642,6 @@ footer nav i {
   flex-flow: column wrap;
   align-items: center;
 }
-@media screen and (min-width: 541px) {
-  .presentation {
-    height: 18rem;
-  }
-}
 
 h2 {
   margin-top: 2.32rem;
@@ -676,11 +669,6 @@ nav {
 nav h4 {
   width: 21rem;
   margin: 0 auto;
-}
-@media screen and (min-width: 1025px) {
-  nav h4 {
-    text-align: center;
-  }
 }
 
 #restau {

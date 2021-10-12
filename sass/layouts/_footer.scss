@@ -9,9 +9,6 @@ footer{
         width: 19.74rem;
         margin: 0 auto;
         padding-top: 1.5rem;
-        @include tablette{
-            margin-left: 3.75rem;
-        }
         & h1{
             text-align: left;
             font-size: 1.13rem;
