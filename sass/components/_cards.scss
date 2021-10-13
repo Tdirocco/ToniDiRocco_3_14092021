@@ -8,6 +8,15 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
+    @include tablette{
+      width: 100%;
+      height: 34rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+      justify-items: center;
+      align-items: center;
+    }
 }
 
 .card{
@@ -17,6 +26,9 @@
     border-radius: 0.83rem;
     position: relative;
     z-index: 1;
+    @include tablette{
+      max-width: 25rem;
+    }
     &:hover{
         box-shadow: 0 0.3rem 0.5rem lighten($footer-color, 45);
     }

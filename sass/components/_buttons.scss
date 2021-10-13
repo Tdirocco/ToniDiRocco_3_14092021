@@ -53,6 +53,9 @@
     font-size: 1rem;
     font-weight: 500;
     color: black;
+    @include desktop{
+        width: 17rem;
+    }
     & .description{
         width: 18.125rem;
         display: grid;
@@ -86,6 +89,27 @@
         margin-left: 0.94rem;
     } 
 }
+
+@include desktop{
+    nav h4{
+        grid-column: 2;
+        grid-row: 1;
+        text-align: center;
+    }
+    .first{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .second{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .third{
+        grid-column: 3;
+        grid-row: 2;
+    }
+}
+
 
 .favoris{
     position: relative;

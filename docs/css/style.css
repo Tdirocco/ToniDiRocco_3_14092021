@@ -191,7 +191,6 @@ h3 {
 
 footer {
   background-color: #363636;
-  color: #FFFFFF;
   height: 12.31rem;
 }
 footer a {
@@ -202,6 +201,11 @@ footer .liens {
   margin: 0 auto;
   padding-top: 1.5rem;
 }
+@media screen and (min-width: 540px) {
+  footer .liens {
+    width: 90%;
+  }
+}
 footer .liens h1 {
   text-align: left;
   font-size: 1.13rem;
@@ -211,6 +215,12 @@ footer nav {
   height: 6.33rem;
   margin: 1rem auto;
   align-items: flex-start;
+}
+@media screen and (min-width: 540px) {
+  footer nav {
+    width: 90%;
+    margin: 1rem 0;
+  }
 }
 footer nav li {
   margin-bottom: 0.4rem;
@@ -241,6 +251,17 @@ footer nav i {
   flex-flow: column wrap;
   justify-content: space-between;
 }
+@media screen and (min-width: 540px) {
+  .galerie {
+    width: 100%;
+    height: 34rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+  }
+}
 
 .card {
   width: 100%;
@@ -249,6 +270,11 @@ footer nav i {
   border-radius: 0.83rem;
   position: relative;
   z-index: 1;
+}
+@media screen and (min-width: 540px) {
+  .card {
+    max-width: 25rem;
+  }
 }
 .card:hover {
   box-shadow: 0 0.3rem 0.5rem darkgray;
@@ -555,6 +581,11 @@ footer nav i {
   font-weight: 500;
   color: black;
 }
+@media screen and (min-width: 1024px) {
+  .btn2 {
+    width: 17rem;
+  }
+}
 .btn2 .description {
   width: 18.125rem;
   display: grid;
@@ -588,6 +619,28 @@ footer nav i {
   margin-left: 0.94rem;
 }
 
+@media screen and (min-width: 1024px) {
+  nav h4 {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+  }
+
+  .first {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .second {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .third {
+    grid-column: 3;
+    grid-row: 2;
+  }
+}
 .favoris {
   position: relative;
   display: flex;
@@ -642,6 +695,11 @@ footer nav i {
   flex-flow: column wrap;
   align-items: center;
 }
+@media screen and (min-width: 540px) {
+  .presentation {
+    height: 17.5rem;
+  }
+}
 
 h2 {
   margin-top: 2.32rem;
@@ -666,6 +724,18 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (min-width: 1024px) {
+  nav {
+    width: 90%;
+    max-width: 68rem;
+    height: 12rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+}
 nav h4 {
   width: 21rem;
   margin: 0 auto;
@@ -675,6 +745,11 @@ nav h4 {
   background-color: #F5F5F5;
   height: 76.94rem;
 }
+@media screen and (min-width: 540px) {
+  #restau {
+    height: 45rem;
+  }
+}
 
 .selection {
   width: 21rem;
@@ -682,6 +757,13 @@ nav h4 {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+}
+@media screen and (min-width: 540px) {
+  .selection {
+    width: 90%;
+    max-width: 68rem;
+    margin: 0 auto;
+  }
 }
 
 #restau:before {

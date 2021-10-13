@@ -1,6 +1,5 @@
 footer{
     background-color: $footer-color;
-    color: $white;
     height: 12.31rem;
     & a{
         color: $white;
@@ -9,6 +8,9 @@ footer{
         width: 19.74rem;
         margin: 0 auto;
         padding-top: 1.5rem;
+        @include tablette{
+            width: 90%;
+        }
         & h1{
             text-align: left;
             font-size: 1.13rem;
@@ -19,6 +21,10 @@ footer{
         height: 6.33rem;
         margin: 1rem auto;
         align-items: flex-start;
+        @include tablette{
+            width: 90%;
+            margin: 1rem 0;
+        }
         & li{
             margin-bottom: 0.4rem;
             font-size: 1rem;
