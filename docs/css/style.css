@@ -65,6 +65,7 @@
 }
 
 main {
+  width: 100%;
   margin-top: 3.94rem;
 }
 
@@ -93,6 +94,18 @@ main {
   padding-bottom: 1rem;
   margin-bottom: -3.2rem;
 }
+@media screen and (min-width: 540px) {
+  .choix-menu {
+    width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .choix-menu {
+    width: 100%;
+  }
+}
 
 .title {
   width: 21rem;
@@ -117,8 +130,8 @@ main {
 }
 
 .choix-part-menu {
-  width: 21.88rem;
-  margin: 1rem auto 0.7rem auto;
+  width: 20rem;
+  margin: 1rem auto 0.7rem 0;
   display: flex;
   flex-direction: column;
   justify-self: start;
@@ -349,12 +362,18 @@ footer nav i {
 
 /* card plats */
 .galerie2 {
-  width: 21.82rem;
+  width: 21rem;
   min-height: 14.69rem;
   margin: 0 auto 1.3rem auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media screen and (min-width: 1024px) {
+  .galerie2 {
+    width: 20rem;
+    margin-top: 1.5rem;
+  }
 }
 
 .card-plat {
@@ -433,6 +452,7 @@ footer nav i {
   width: 100%;
   height: 4.3rem;
   border-radius: 1rem;
+  background-color: #FFFFFF;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -563,6 +583,11 @@ footer nav i {
   box-shadow: 0 0.3rem 0.5rem darkgray;
   opacity: 0.9;
 }
+@media screen and (min-width: 1024px) {
+  .btnRestau--commande {
+    margin: 8rem auto;
+  }
+}
 .btnRestau:hover {
   cursor: pointer;
   box-shadow: 0 0.3rem 0.5rem darkgray;
@@ -688,6 +713,15 @@ footer nav i {
   cursor: text;
 }
 
+input[type=text]:focus {
+  outline: none;
+  border: 3px solid red;
+}
+
+input[type=text]:focus {
+  border-color: #363636;
+}
+
 .presentation {
   height: 21.06rem;
   background-color: #F5F5F5;
@@ -770,6 +804,26 @@ nav h4 {
   display: block;
   content: "";
   height: 4rem;
+}
+
+.menu {
+  width: 99%;
+  max-width: 75rem;
+}
+.menu__part {
+  width: 21rem;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

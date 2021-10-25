@@ -45,3 +45,9 @@
     @content;
   }
 }
+
+@mixin desktop-high{
+  @media screen and (min-width: map-get($breakpoints, UHD)){
+    @content;
+  }
+}

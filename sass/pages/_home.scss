@@ -16,6 +16,17 @@
     &:hover{
         cursor: text;
     }
+    
+}
+
+input[type=text]:focus{
+    outline: none;
+    border: 3px solid red;
+  }
+
+
+input[type=text]:focus {
+    border-color: $footer-color;
 }
 
 .presentation{

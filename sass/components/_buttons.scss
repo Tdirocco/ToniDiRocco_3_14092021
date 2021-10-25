@@ -34,6 +34,9 @@
             box-shadow: 0 0.3rem 0.5rem lighten($footer-color, 45);
             opacity: 0.9;
         }
+        @include desktop{
+            margin: 8rem auto;
+        }
     }
     &:hover{
         cursor: pointer;
