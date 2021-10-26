@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./docs/css/style.css",
-    "prefix": "postcss ./docs/css/style.css --use autoprefixer -d ./docs/prefixed/"
+    "prefix": "postcss ./docs/css/style.css --use autoprefixer -d ./docs/css/"
   },
   "repository": {
     "type": "git",
@@ -13,5 +13,5 @@
   },
   "author": "Toni DI ROCCO",
   "license": "ISC",
-  "browserlist": "last 4 versions"
+  "browserslist": "last 4 versions"
 }
