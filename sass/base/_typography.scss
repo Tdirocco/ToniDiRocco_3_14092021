@@ -12,6 +12,9 @@ h1{
     text-align: center;
     font-weight: 400;
     font-size: 1.81rem;
+    @include verysmall{
+        font-size: 1.5rem;
+    }
 }
 
 h2{

@@ -56,13 +56,22 @@
     font-size: 1rem;
     font-weight: 500;
     color: black;
+    @include verysmall{
+        width: 18.25rem;
+        height: 4.2rem;
+        justify-self: center;
+    }
+
     @include desktop{
         width: 17rem;
     }
     & .description{
-        width: 18.125rem;
+        width: 18rem;
         display: grid;
         grid-template-columns: 20% 80%;
+        @include verysmall{
+            width: 17.4rem;
+        }
     }
     &:hover{
         cursor: pointer;
@@ -90,6 +99,9 @@
         color: #7D7D7D;
         font-size: 1.25rem;
         margin-left: 0.94rem;
+        @include verysmall{
+            margin-left: 0.5rem;
+        }
     } 
 }
 

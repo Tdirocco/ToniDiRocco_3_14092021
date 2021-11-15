@@ -5,6 +5,9 @@
     &__part{
         width: 21rem;
         margin: 0 auto;
+        @include verysmall{
+            width: 18.75rem;
+        }
         @include desktop-high{
             width: 23rem;
         }

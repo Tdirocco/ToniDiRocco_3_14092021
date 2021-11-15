@@ -8,6 +8,9 @@ footer{
         width: 19.74rem;
         margin: 0 auto;
         padding-top: 1.5rem;
+        @include verysmall{
+            width: 18.75rem;
+        }
         @include tablette{
             width: 90%;
         }
@@ -21,6 +24,9 @@ footer{
         height: 6.33rem;
         margin: 1rem auto;
         align-items: flex-start;
+        @include verysmall{
+            width: 18.75rem;
+        }
         @include tablette{
             width: 90%;
             margin: 1rem 0;
