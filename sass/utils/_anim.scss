@@ -34,3 +34,27 @@
     from{ opacity: 0}
     to{ opacity: 1}
   }
+
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes reduce {
+    from{
+      height: 300px;
+    }
+    to {
+      height: 40px; 
+    }
+  }
+  
+  @keyframes zoomout {
+    from{
+      transform: scale(100%);
+    }
+    to{
+      transform: scale(0%);
+    }
+  }
